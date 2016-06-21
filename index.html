@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>inter</title>
+</head>
+<body>
+<script type="text/javascript">
+//可以快速打印一个五分制的评分
+  function star(score){
+    if(score >5 || score <0){
+      throw new Error("请输入0-5的数字")
+    }
+    return "★★★★★☆☆☆☆☆".substring(5-score,10-score);
+  }
+
+  console.log(star(3));
+
+//获取一个10位长度的随机字符串
+
+  var randomString = Math.random().toString(36).substr(2,10)
+
+  console.log(randomString);
+</script>
+</body>
+</html>
